@@ -4,6 +4,13 @@ Este repositório contém uma página web interativa e estilizada desenvolvida p
 
 ---
 
+## Acesso ao Projeto
+
+Você pode acessar o site publicado através do link:
+👉 [Aprendendo CSS - GitHub Pages](https://jordana-code.github.io/Aprendendo-CSS/)
+
+---
+
 ## Tecnologias Utilizadas
 
 * **HTML5:** Estruturação semântica do conteúdo da página.
@@ -55,9 +62,4 @@ O guia está dividido em seções didáticas que cobrem os seguintes tópicos:
 * `pratica.css`: Folha de estilos responsável pela identidade visual, paleta de cores, tabelas e tipografia do site.
 * `estrela.png`: Ícone (favicon) exibido na aba do navegador.
 
----
 
-## Acesso ao Projeto
-
-Você pode acessar o site publicado através do link:
-👉 [Aprendendo CSS - GitHub Pages](https://jordana-code.github.io/Aprendendo-CSS/)
