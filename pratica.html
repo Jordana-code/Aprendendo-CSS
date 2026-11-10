@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS</title>
+    <link rel="stylesheet" href="pratica.css">
+    <link rel="shortcut icon" href="estrela.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Aprendendo CSS</h1>
+    <p class="introducao">Nessa página vamos colocar em prática os conceitos aprendidos no CSS:</p>
+    <p class="introducao">Pegue o seu caderno e seu notbook e vamos começar a aprender!</p>
+    <p class="introducao">a princípio aprendemos que tem 3 modos de aplicar o CSS:</p>
+
+    <h2 class="aplicacao">Modos de Aplicar o CSS:</h2>
+    <ul id="modos">
+        <li><b>Modo Inline:</b>  Nesse modo, o CSS é aplicado diretamente na tag do HTML usando a tag <b>style</b></li>
+        <li><b>Modo Internal:</b> Nesse modo, o CSS é aplicado dentro da tag <b>style</b> no cabeçalho do documento HTML</li>
+        <li><b>Modo External:</b> Nesse modo, o CSS é aplicado em um arquivo separado com a extensão <b>.css</b> e importado no documento HTML</li>
+    </ul>
+
+    <h2 class="seletores">Seletores no CSS:</h2>
+    <p class="seletoresp">Os seletores são utilizados para selecionar elementos HTML aos quais aplicar estilos CSS. Vamos aprender os 4 tipos de seletores:</p>
+    <ol id="seletores">
+        <li><b>Seletores de Elemento:</b> Selecionam elementos com base em seu nome (ex: h1, p, div)</li>
+        <li><b>Seletores de Classe:</b> Selecionam elementos com base em sua classe (ex: .classe)</li>
+        <li><b>Seletores de ID:</b> Selecionam elementos com base em seu ID (ex: #id)</li>
+        <li><b>Seletores Universais:</b> Selecionam todos os elementos (ex: *)</li>
+    </ol>
+    <p class="seletoresp"><b>IMPORTANTE:</b>As <b>classes</b> e <b>IDs</b> NÃO podem começar com números!!</p>
+
+    <h2 class="propriedade">Propriedades CSS:</h2>
+    <p class="propriedadep">As propriedades CSS são utilizadas para definir o estilo dos elementos HTML. Vamos aprender algumas das principais propriedades:</p>
+
+    <table>
+        <tr>
+            <th>Propriedade Color</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>color</b></td>
+            <td>Define a cor do texto do elemento selecionado</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Background</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>background</b></td>
+            <td>É a propriedade que define todas as propriedades do background</td>
+        </tr>
+        <tr>
+            <td><b>background-color</b></td>
+            <td>Define a cor de fundo do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>background-image</b></td>
+            <td>Define uma imagem de fundo para o elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>background-repeat</b></td>
+            <td>Define se a imagem de fundo vai se repetir ou não</td>
+        </tr>
+        <tr>
+            <td><b>background-position</b></td>
+            <td>Define a posição da imagem de fundo</td>
+        </tr>
+        <tr>
+            <td><b>background-size</b></td>
+            <td>Define o tamanho da imagem de fundo</td>
+        </tr>
+        <tr>
+            <td><b>background-attachment</b></td>
+            <td>Define se a imagem de fundo vai ficar fixa ou vai se mover junto com a rolagem da página</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Border</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>Border</b></td>
+            <td>Define a borda do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>border-style</b></td>
+            <td>Define o estilo da borda do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>border-color</b></td>
+            <td>Define a cor da borda do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>border-radius</b></td>
+            <td>Define se a borda do elemento selecionado vai ser arredondada ou não</td>
+        </tr>
+        <tr>
+            <td><b>border-top</b></td>
+            <td>Define a borda superior do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>border-right</b></td>
+            <td>Define a borda direita do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>border-bottom</b></td>
+            <td>Define a borda inferior do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>border-left</b></td>
+            <td>Define a borda esquerda do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>border</b></td>
+            <td>Define a borda do elemento selecionado</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Margin</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>margin</b></td>
+            <td>Define a margem do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>margin-top</b></td>
+            <td>Define a margem superior do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>margin-right</b></td>
+            <td>Define a margem direita do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>margin-bottom</b></td>
+            <td>Define a margem inferior do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>margin-left</b></td>
+            <td>Define a margem esquerda do elemento selecionado</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Padding</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>padding</b></td>
+            <td>Define o espaçamento interno do elemento selecionado</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Width e Height</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>width</b></td>
+            <td>Define a largura do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>height</b></td>
+            <td>Define a altura do elemento selecionado</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Text</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>text-align</b></td>
+            <td>Define o alinhamento do texto do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>text-decoration</b></td>
+            <td>Define a decoração do texto do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>text-transform</b></td>
+            <td>Define a transformação do texto do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>direction</b></td>
+            <td>Define a direção do texto do elemento selecionado (ltr: da esquerda para a direita; rtl: da direita para a esquerda)</td>
+        </tr>
+        <tr>
+            <td><b>text-indent</b></td>
+            <td>Define o recuo do primeiro caractere da linha do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>letter-spacing</b></td>
+            <td>Define o espaçamento entre as letras do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>word-spacing</b></td>
+            <td>Define o espaçamento entre as palavras do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>line-height</b></td>
+            <td>Define a altura da linha do texto (o espaço entre as linhas) do elemento selecionado</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Font</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>font-family</b></td>
+            <td>Define a família da fonte do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>font-size</b></td>
+            <td>Define o tamanho da fonte do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>font-style</b></td>
+            <td>Define o estilo da fonte do elemento selecionado</td>
+        </tr>
+        <tr>
+            <td><b>font-weight</b></td>
+            <td>Define a espessura da fonte do elemento selecionado</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Estilização de Links</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>a</b></td>
+            <td>Define o estilo do link</td>
+        </tr>
+        <tr>
+            <td><b>a:link</b></td>
+            <td>Define o estilo do link não visitado</td>
+        </tr>
+        <tr>
+            <td><b>a:visited</b></td>
+            <td>Define o estilo do link já visitado</td>
+        </tr>
+        <tr>
+            <td><b>a:hover</b></td>
+            <td>Define o estilo do link quando o mouse está sobre ele</td>
+        </tr>
+        <tr>
+            <td><b>a:active</b></td>
+            <td>Define o estilo do link quando está sendo clicado</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Display</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>display</b></td>
+            <td>Define como o elemento será exibido na página</td>
+        </tr>
+        <tr>
+            <td><b>display: block</b></td>
+            <td>Define o elemento como um bloco, ocupando toda a largura disponível</td>
+        </tr>
+        <tr>
+            <td><b>display: inline</b></td>
+            <td>Define o elemento como um elemento em linha, ocupando apenas a largura necessária</td>
+        </tr>
+        <tr>
+            <td><b>display: inline-block</b></td>
+            <td>Define o elemento como um elemento em linha, mas permitindo definir largura e altura</td>
+        </tr>
+        <tr>
+            <td><b>obs: visibility: hidden;</b></td>
+            <td>Funciona para que o elemento fique invisível, mas ainda ocupe espaço na página.</td>
+        </tr>
+        <tr>
+            <td><b>display: none;</b></td>
+            <td>Funciona para que o elemento fique invisível, não ocupando espaço na página.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Max-width</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>max-width</b></td>
+            <td>Define a largura máxima do elemento</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Position</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>position</b></td>
+            <td>Define a posição do elemento na página</td>
+        </tr>
+        <tr>
+            <td><b>position: static</b></td>
+            <td>Define o elemento como estático, seguindo o fluxo normal da página</td>
+        </tr>
+        <tr>
+            <td><b>position: relative</b></td>
+            <td>Define o elemento como relativo, permitindo posicioná-lo em relação à sua posição original</td>
+        </tr>
+        <tr>
+            <td><b>position: absolute</b></td>
+            <td>Define o elemento como absoluto, permitindo posicioná-lo em relação ao seu elemento pai mais próximo com posição relativa</td>
+        </tr>
+        <tr>
+            <td><b>position: fixed</b></td>
+            <td>Define o elemento como fixo, permitindo posicioná-lo em relação à janela do navegador</td>
+        </tr>
+        <tr>
+            <td><b>position: sticky</b></td>
+            <td>Define o elemento como fixo, permitindo posicioná-lo em relação à janela do navegador</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Overflow</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>overflow</b></td>
+            <td>(Padrão) O conteúdo não é cortado e pode transbordar para fora da caixa do elemento.</td>
+        </tr>
+        <tr>
+            <td><b>overflow: hidden;</b></td>
+            <td>O conteúdo que transborda é cortado (escondido), e nenhuma barra de rolagem é exibida</td>
+        </tr>
+        <tr>
+            <td><b>overflow: scroll;</b></td>
+            <td>O conteúdo que transborda é cortado, mas barras de rolagem são sempre exibidas (horizontal e vertical), permitindo rolar o conteúdo.</td>
+        </tr>
+        <tr>
+            <td><b>overflow: auto;</b></td>
+            <td>Similar ao 'scroll', mas as barras de rolagem aparecem apenas quando o conteúdo realmente transborda a caixa.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Float</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>float</b></td>
+            <td>Define se o elemento vai flutuar à esquerda ou à direita do seu contêiner pai.</td>
+        </tr>
+        <tr>
+            <td><b>float: left;</b></td>
+            <td>O elemento flutua à esquerda do contêiner pai.</td>
+        </tr>
+        <tr>
+            <td><b>float: right;</b></td>
+            <td>O elemento flutua à direita do contêiner pai.</td>
+        </tr>
+        <tr>
+            <td><b>float: none;</b></td>
+            <td>(Padrão) O elemento não flutua. Ele aparece na ordem normal do documento.</td>
+        </tr>
+        <tr>
+            <td><b>float: inline-start;</b></td>
+            <td>O elemento flutua para o início do bloco, dependendo da direção do texto (à esquerda para textos da esquerda para a direita, e à direita para textos da direita para a esquerda).</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedade Opacity</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>opacity</b></td>
+            <td>Define a opacidade do elemento, variando de 0 (totalmente transparente) a 1 (totalmente opaco).</td>
+        </tr>
+        <tr>
+            <td><b>opacity: 0.5;</b></td>
+            <td>Define o elemento com 50% de opacidade, tornando-o semi-transparente.</td>
+        </tr>
+        <tr>
+            <td><b>opacity: 1;</b></td>
+            <td>Define o elemento como totalmente opaco, sem transparência.</td>
+        </tr>
+        <tr>
+            <td><b>opacity: 0;</b></td>
+            <td>Define o elemento como totalmente transparente, tornando-o invisível.</td>
+        </tr>
+    </table>
+
+    
+
+    <table>
+        <tr>
+            <th>Efeito Dropdown</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>dropdown</b></td>
+            <td>Menu suspenso que aparece quando o usuário interage com um elemento (clicando ou passando o mouse). Muito usado em navegação, dá acesso a submenus ou opções extras sem ocupar espaço na interface principal.</td>
+        </tr>
+        <tr>
+            <td><b>gatilho</b></td>
+            <td>Botão ou link que, ao receber a interação do usuário, faz o menu aparecer.</td>
+        </tr>
+        <tr>
+            <td><b>contêiner do menu</b></td>
+            <td>Geralmente uma &lt;div&gt; que guarda os itens do menu e que será mostrada ou escondida.</td>
+        </tr>
+        <tr>
+            <td><b>.dropdown</b></td>
+            <td>Elemento que envolve o gatilho e o menu. Usa position: relative e display: inline-block para servir de referência ao posicionamento do menu.</td>
+        </tr>
+        <tr>
+            <td><b>.dropdown-content</b></td>
+            <td>O menu em si. Começa oculto (display: none;), usa position: absolute para aparecer por cima do conteúdo e z-index para ficar na frente dos outros elementos.</td>
+        </tr>
+        <tr>
+            <td><b>.dropdown:hover .dropdown-content</b></td>
+            <td>Quando o mouse passa sobre o .dropdown, o menu é exibido (display: block;).</td>
+        </tr>
+        <tr>
+            <td><b>transições e animações</b></td>
+            <td>Podem ser adicionadas para suavizar a aparição do menu.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Especificidade CSS</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>especificidade</b></td>
+            <td>Determina qual regra será aplicada quando várias regras em conflito se aplicam ao mesmo elemento. Vence a regra com maior especificidade.</td>
+        </tr>
+        <tr>
+            <td><b>#id</b></td>
+            <td>Seletores de ID têm peso 100. Ex: #menu → (1, 0, 0)</td>
+        </tr>
+        <tr>
+            <td><b>.classe, [atributo], :hover</b></td>
+            <td>Seletores de classe, atributo e pseudo-classe (:hover, :focus) têm peso 10. Ex: .item → (0, 1, 0)</td>
+        </tr>
+        <tr>
+            <td><b>div, p, ::before</b></td>
+            <td>Seletores de tag e pseudo-elementos (::before, ::after) têm peso 1. Ex: div → (0, 0, 1)</td>
+        </tr>
+        <tr>
+            <td><b>*, +, &gt;, ~</b></td>
+            <td>O seletor universal e os combinadores não contam para a especificidade.</td>
+        </tr>
+        <tr>
+            <td><b>:not()</b></td>
+            <td>A negação em si não conta, mas o seletor que está dentro dela conta normalmente.</td>
+        </tr>
+        <tr>
+            <td><b>(a, b, c)</b></td>
+            <td>Forma de representar a especificidade: a = quantidade de IDs, b = classes, atributos e pseudo-classes, c = tags e pseudo-elementos.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Regra !important</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>!important</b></td>
+            <td>Dá prioridade máxima a uma declaração, sobrescrevendo outras regras mesmo que tenham maior especificidade ou venham depois no código.</td>
+        </tr>
+        <tr>
+            <td><b>sintaxe</b></td>
+            <td>É adicionado no final da declaração. Ex: color: red !important;</td>
+        </tr>
+        <tr>
+            <td><b>uso responsável</b></td>
+            <td>O uso excessivo dificulta a manutenção do código e cria conflitos inesperados. Deve ser usado só quando necessário, como último recurso.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Efeito Gradiente</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>gradiente</b></td>
+            <td>Cria transições suaves entre duas ou mais cores. Pode ser aplicado como fundo de elementos, botões, textos e muito mais (usando background-image).</td>
+        </tr>
+        <tr>
+            <td><b>linear-gradient()</b></td>
+            <td>A transição de cores acontece em linha reta. A direção pode ser definida com to right, to left, to top, to bottom ou em graus.</td>
+        </tr>
+        <tr>
+            <td><b>radial-gradient()</b></td>
+            <td>A transição de cores acontece a partir de um ponto central. Pode-se definir o ponto central e a forma (circle ou ellipse).</td>
+        </tr>
+        <tr>
+            <td><b>conic-gradient()</b></td>
+            <td>A transição de cores acontece em volta de um ponto central, criando um efeito de "rotação".</td>
+        </tr>
+        <tr>
+            <td><b>múltiplas cores</b></td>
+            <td>É possível colocar várias cores, separadas por vírgula, para criar efeitos mais complexos.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Propriedades Text Shadow e Box Shadow</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>text-shadow</b></td>
+            <td>Adiciona sombra ao texto. Valores, na ordem: deslocamento horizontal, deslocamento vertical, desfoque e cor da sombra. Ex: text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);</td>
+        </tr>
+        <tr>
+            <td><b>box-shadow</b></td>
+            <td>Adiciona sombra à caixa do elemento. Valores, na ordem: deslocamento horizontal, deslocamento vertical, desfoque, raio de espalhamento e cor da sombra.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Efeito de Texto</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>white-space</b></td>
+            <td>Define como o texto trata quebras de linha e espaços em branco.</td>
+        </tr>
+        <tr>
+            <td><b>white-space: normal;</b></td>
+            <td>(Padrão) O texto quebra automaticamente em linhas e vários espaços em branco viram um só.</td>
+        </tr>
+        <tr>
+            <td><b>white-space: nowrap;</b></td>
+            <td>O texto não quebra linha, ficando em uma única linha, e vários espaços em branco viram um só.</td>
+        </tr>
+        <tr>
+            <td><b>text-overflow</b></td>
+            <td>Define o que acontece com o texto que ultrapassa os limites do elemento.</td>
+        </tr>
+        <tr>
+            <td><b>text-overflow: clip;</b></td>
+            <td>(Padrão) O texto que passa do limite é cortado, sem indicação de que há mais conteúdo.</td>
+        </tr>
+        <tr>
+            <td><b>text-overflow: ellipsis;</b></td>
+            <td>O texto que passa do limite é cortado e substituído por reticências (...), indicando que há mais conteúdo.</td>
+        </tr>
+        <tr>
+            <td><b>obs: ellipsis</b></td>
+            <td>Para as reticências aparecerem, o elemento também precisa de white-space: nowrap; e overflow: hidden;</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Media Queries</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>@media</b></td>
+            <td>Técnica usada para aplicar estilos diferentes de acordo com o tamanho da tela ou do dispositivo.</td>
+        </tr>
+        <tr>
+            <td><b>max-width</b></td>
+            <td>Aplica os estilos quando a largura da tela é menor ou igual ao valor informado.</td>
+        </tr>
+        <tr>
+            <td><b>min-width</b></td>
+            <td>Aplica os estilos quando a largura da tela é maior ou igual ao valor informado.</td>
+        </tr>
+        <tr>
+            <td><b>and, not, only</b></td>
+            <td>Combinam ou restringem condições. Ex: @media only screen and (max-width: 600px). Para "ou", usa-se a vírgula entre as condições.</td>
+        </tr>
+        <tr>
+            <td><b>até 600px</b></td>
+            <td>Smartphones.</td>
+        </tr>
+        <tr>
+            <td><b>a partir de 600px</b></td>
+            <td>Dispositivos um pouco maiores, mas ainda pequenos (tablets pequenos e smartphones largos).</td>
+        </tr>
+        <tr>
+            <td><b>a partir de 768px</b></td>
+            <td>Dispositivos médios (tablets deitados).</td>
+        </tr>
+        <tr>
+            <td><b>a partir de 992px</b></td>
+            <td>Dispositivos largos (laptops e desktops).</td>
+        </tr>
+        <tr>
+            <td><b>a partir de 1200px</b></td>
+            <td>Telas super largas (laptops e desktops maiores e até TVs).</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Flexbox (Contêiner)</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>flexbox</b></td>
+            <td>Modelo de layout que distribui o espaço entre os itens de um contêiner e os alinha de forma eficiente, mesmo quando o tamanho deles é desconhecido ou muda.</td>
+        </tr>
+        <tr>
+            <td><b>display: flex;</b></td>
+            <td>Transforma o elemento em um contêiner flexível.</td>
+        </tr>
+        <tr>
+            <td><b>flex-direction</b></td>
+            <td>Define a direção dos itens: row, row-reverse, column ou column-reverse.</td>
+        </tr>
+        <tr>
+            <td><b>justify-content</b></td>
+            <td>Alinha os itens no eixo principal (horizontal com row, vertical com column): flex-start, flex-end, center, space-between, space-around ou space-evenly.</td>
+        </tr>
+        <tr>
+            <td><b>align-items</b></td>
+            <td>Alinha os itens no eixo cruzado (vertical com row, horizontal com column): flex-start, flex-end, center, baseline ou stretch.</td>
+        </tr>
+        <tr>
+            <td><b>flex-wrap</b></td>
+            <td>Define se os itens quebram para a próxima linha: nowrap, wrap ou wrap-reverse.</td>
+        </tr>
+        <tr>
+            <td><b>flex-flow</b></td>
+            <td>Junta flex-direction e flex-wrap em uma única propriedade.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Flexbox (Itens)</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><b>order</b></td>
+            <td>Define a ordem dos itens (o padrão é 0).</td>
+        </tr>
+        <tr>
+            <td><b>flex-grow</b></td>
+            <td>Define quanto o item pode crescer em relação aos outros.</td>
+        </tr>
+        <tr>
+            <td><b>flex-shrink</b></td>
+            <td>Define quanto o item pode encolher em relação aos outros.</td>
+        </tr>
+        <tr>
+            <td><b>flex-basis</b></td>
+            <td>Define o tamanho inicial do item antes de distribuir o espaço que sobra.</td>
+        </tr>
+        <tr>
+            <td><b>obs: box-sizing: border-box;</b></td>
+            <td>Inclui o padding e a borda no tamanho total do elemento, facilitando o controle do layout.</td>
+        </tr>
+    </table>
+</body>
+</html>
