@@ -60,6 +60,5 @@ O guia está dividido em seções didáticas que cobrem os seguintes tópicos:
 
 * `pratica.html`: Arquivo principal contendo a estrutura semântica de todo o conteúdo educativo.
 * `pratica.css`: Folha de estilos responsável pela identidade visual, paleta de cores, tabelas e tipografia do site.
-* `estrela.png`: Ícone (favicon) exibido na aba do navegador.
 
 
